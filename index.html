@@ -1,0 +1,840 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+	<title>Apollo Computer Education</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+	<link rel="stylesheet" href="/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+	 <!-- Header -->
+	 <header class="fixed-top">
+			<nav id="navbar" class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff0002;">
+				<div class="container">
+				
+					<a href="#home" class="navbar-brand">
+						<img loading="lazy" style="width: 190px;" src="data:image/png;base64,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" alt="logo" loading="lazy">
+					</a>
+
+					<button class="navbar-toggler" style="width: 50px;" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navBar">
+						<ul class="navbar-nav ms-auto" style="align-items: center;">
+							<li class="nav-item">
+								<a href="#home" class="nav-link me-2 active">HOME</a>
+							</li>
+							<li class="nav-item">
+								<a href="#about-us" class="nav-link me-2">ABOUT US</a>
+							</li>
+							<li class="nav-item">
+								<a href="#courses" class="nav-link me-2">COURSES</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contact-us" class="nav-link me-2">CONTACT US</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+	 </header>
+    <!-- End Header -->
+
+	<!-- Main Content -->
+	<main>
+
+		<!-- Home -->
+		<section id="home" style="padding-top: 90px;">
+			<div id="home-slide" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#home-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#home-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#home-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+				  <div class="carousel-item pt-3 active">
+					<img loading="lazy" src="https://www.digitalvidya.com/blog/wp-content/uploads/2019/07/Computer-Courses_5e88b07dcfc3aaf35cdab473242649d4-1.jpg" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img loading="lazy" src="https://bestcomputerinstitute.com/super_admin/img_logo/4134.jpg" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item pt-2">
+					<img loading="lazy" src="https://apollocomputereducation.in/wp-content/uploads/2023/02/Ban2-copy.jpg" class="d-block w-100" alt="...">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#home-slide" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#home-slide" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+		</section>
+		<!-- End Home -->
+
+		
+
+		<!-- About Us -->
+		<section id="about-us" style="padding-top: 50px;">
+		
+			<br>
+			
+			<h1 class="display-2" style="font-family: Impact; text-align: center; margin-top: 40px; padding-bottom: 20px;"><span class="bg-warning rounded-pill p-3" style="text-shadow: 5px 5px 10px black; color: white;">ABOUT US</span></h1>
+
+			<br>
+
+			<div class="container-fluid my-4">
+				<div class="row">
+					<div class="col-lg-6">
+						<h1><span class="badge rounded txt-dark ms-4" style="background-color: #ff0002;"> About Us </span></h1>
+						<p class="fw-normal ms-4 mt-3">APOLLO Computer Education is conveniently situated in kanchipuram. If you are deciding a best place for maximizing your knowledge, then you have come to the right spot. At APOLLO Computer Education, we understand the market needs better than anyone else and train the students with variety of ammunitions that would help them to be successful in their respective industry.</p>
+						<p class="fw-normal ms-4">The specialty of Apollo Computer Education Ltd Limited is 100% practical training. Along with the Computer Training, Apollo Computer Education Ltd Limited also moulds the students with a unique personality development program, so that Apollolites face the real world without any problem.</p>
+					</div>
+					<div class="col-lg-6">
+						<img loading="lazy" src="https://media.istockphoto.com/id/1340023944/photo/school-computer-lab.jpg?s=612x612&w=0&k=20&c=ka6qrd-uqFvsnrm1BT5YKJKHFsZuTzf6EXXw9nTG_N4=" alt="" class="img-fluid rounded mx-auto d-block" style="width: 650px;">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About Us -->
+
+		<!-- Courses -->
+		<section id="courses" style="padding-top: 50px;">
+			<br>
+
+			<h1 class="display-2 " style="font-family: Impact; text-align: center; margin-top: 40px; padding-bottom: 20px;"><span class="bg-warning rounded-pill p-3" style="text-shadow: 5px 5px 10px black; color: white;">COURSES</span></h1>
+
+			<br>
+
+			<div class="container my-4">
+				<div class="card-deck text-center">
+					<div class="row">
+						<div class="col-md-6 my-3">
+							<h2 class="mb-3" style="text-align: center;"><span style="color: #ff0002; ">Software Courses</span></h2>
+							<div class="card">
+								<img loading="lazy" src="https://www.zdnet.com/a/img/resize/0a6b0be2f543ddbf313fc83a706b807b77c3c202/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=900&width=1200" alt="" class="card-img-top">
+								<div class="card-body">
+									<p class="card-text">Our training methods and topics are up to date and set according to the most current IT requirements. At our IT training centre, we have a combination of highly trained teachers and good computer facilities.</p>
+								</div>
+								<div class="card-footer">
+									<a href="#more-info" class="btn btn-warning d-block">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 my-3">
+							<h2 class="mb-3" style="text-align: center;"><span style="color: #ff0002; ">Account Courses</span></h2>
+							<div class="card">
+								<img loading="lazy" src="https://i0.wp.com/www.technicalsahab.com/wp-content/uploads/2022/06/Why-Accounting-Software-Need-in-Businesses-Hindi.jpg?fit=640%2C469&ssl=1" alt="" class="card-img-top">
+								<div class="card-body">
+									<p class="card-text">The Account Courses are new methods of Company requirements. This opportunity to practice Company knowledge, skills, improvemand of your knowledge and practices in a realistic development.</p>
+								</div>
+								<div class="card-footer">
+									<a href="#more-info" class="btn btn-warning d-block">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 my-3">
+							<h2 class="mb-3" style="text-align: center;"><span style="color: #ff0002; ">Multimedia Courses</span></h2>
+							<div class="card">
+								<img loading="lazy" src="https://i2.wp.com/sciencemediahub.eu/wp-content/uploads/2020/06/Digital-entertainment-in-lockdown-the-new-life-of-culture-online.jpg?fit=1100%2C826&ssl=1" alt="" class="card-img-top">
+								<div class="card-body">
+									<p class="card-text">Do you have a talent for using the computer and an eye for design? Then you might consider rebooting your career by highlighting and clicking on the emerging new field of multimedia technology.</p>
+								</div>
+								<div class="card-footer">
+									<a href="#more-info" class="btn btn-warning d-block">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 my-3">
+							<h2 class="mb-3" style="text-align: center;"><span style="color: #ff0002; ">Hardware & Networking</span></h2>
+							<div class="card">
+								<img loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGFyZHdhcmV8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="" class="card-img-top">
+								<div class="card-body">
+									<p class="card-text">Our Hardware & Networking are new methods of IT requirements. This opportunity to practice IT knowledge, skills, improvemand of your knowledge and practices in a realistic development setting with a real client.</p>
+								</div>
+								<div class="card-footer">
+									<a href="#more-info" class="btn btn-warning d-block">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<br>
+
+			<!-- Accordion  -->
+			<h2 class="text-center text-light" id="more-info" style="margin-top: 40px;"><span class="bg-success rounded-pill p-2">For More Information :</span></h2>
+			<div class="container accordion" id="course" style="padding-top: 50px;">
+				<!-- Software Courses -->
+				<div class="accordion-items my-2" id="software-courses">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed bg-danger" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#software">
+							Software Courses
+						</button>
+					</h2>
+					<div class="accordion-collapse collapse" id="software" data-bs-parent="#course">
+						<h6 class="text-center text-dark" style="margin-top: 60px;"><span class="bg-warning rounded-pill p-2">Proffessional Training In Software</span></h6>
+					<h1 class="text-center my-4">Software Courses We’re Offering</h1>
+						<div class="accordion-body">
+							<div class="container my-3">
+								<div class="card-group text-center">
+									<div class="row">
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://nareshit.com/wp-content/uploads/2018/08/C-Programming-online-training-nareshit.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding: 40px;">C, C++</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://contentstatic.techgig.com/photo/88712201.cms" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Core Python, Advanced Python</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://media.istockphoto.com/id/1439425791/photo/digital-technology-software-development-concept-coding-programmer-working-on-laptop-with.webp?b=1&s=170667a&w=0&k=20&c=c0Q8u1Y5yFJCDxltBZd0RAn1g01Se6qCjZGS5q9XLZs=" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Diploma in Computer Technology (DCT)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://c4.wallpaperflare.com/wallpaper/72/379/768/technology-security-multimedia-electronic-device-wallpaper-preview.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Diploma in Computer Application (DCA)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://cdn.wallpapersafari.com/93/19/TlAbiK.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master in Java Technology (MJT)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://e2ehiring-cms-assets.s3.ap-south-1.amazonaws.com/Logo_6_1ededc4ca8.png" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Core Java, Advance Java, J2ee, Jsp, Xml</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://www.tutsplanet.com/wp-content/uploads/2018/02/Basededonn%C3%A9esMySQLetPHPavecunexemple.png" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Php, My Sql</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://miro.medium.com/v2/resize:fit:1200/1*3K-LeA7DpvGYnl0lFb7dfA.jpeg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master in .Net Technology (MNT)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://d2mk45aasx86xg.cloudfront.net/shutterstock_601570139_04ca1fc72a.webp" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Asp.Net, Vb.Net, c#, Ms Sql Server</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg?cs=srgb&dl=pexels-christina-morillo-1181243.jpg&fm=jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master in Software Engineering (MSE)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://5.imimg.com/data5/SELLER/Default/2022/2/IB/UU/OO/14579595/customized-software-solution.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master in Software Application (MSA)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://retail.ictkerala.org/pluginfile.php/194025/course/overviewfiles/dsa.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master in Data Science (MDS)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/software_bug_alamy.jpg?itok=nT2B27OF" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Software Testing</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Software Courses -->
+
+				<!-- Account Courses -->
+				<div class="accordion-items my-2" id="account-courses">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed bg-danger" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#account">
+							Account Courses
+						</button>
+					</h2>
+					<div class="accordion-collapse collapse" id="account">
+						<h6 class="text-center text-dark" style="margin-top: 60px;"><span class="bg-warning rounded-pill p-2">Proffessional Training In Account</span></h6>
+						<h1 class="text-center my-4">Account Courses We’re Offering</h1>
+						<div class="accordion-body">
+							<div class="container my-3">
+								<div class="card-deck text-center">
+									<div class="row">
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://cdn.mos.cms.futurecdn.net/Ba3xKbhLaVDPJuRzCpd7o6.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding: 40px;">It Foundation - MS Office</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://wallpapers.com/images/hd/excel-microsoft-spreadsheet-computer-application-enhdz9phqfeeurhx.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Advanced Excel</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://www.attitudetallyacademy.com/Blog/wp-content/uploads/2019/09/tally.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Tally ERP 9</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://newaccesstechnologies.com/images/tally-prime.png" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Tally Prime</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://images.moneycontrol.com/static-mcnews/2017/02/GST-e1489979952404-708x435.jpg?impolicy=website&width=1600&height=900" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Advance Tally(GST)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://smallbizclub.com/wp-content/uploads/2018/10/Office-Automation-Keeping-Up.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Office Automation (OA)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://media.istockphoto.com/id/1140691120/photo/business-and-technology-concept-smart-office.jpg?s=612x612&w=0&k=20&c=0CWifRV1AX7yjXwMkCAmwWoMgceTfYoSvnf93ms-b_E=" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Advance Training In Office Automation (ATOA)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?cs=srgb&dl=pexels-pixabay-53621.jpg&fm=jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Advance Training In Online Certified Accountant (ATOCA)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://www.acquisition-international.com/wp-content/uploads/2021/06/Accountant.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master In Professional Accounting (MPA)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://gradsingapore.com/sites/default/files/Financial%20Accounting_0.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master in Finance & Accounting (MFA)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Account Courses -->
+
+				<!--  Multimedia Courses -->
+				<div class="accordion-items my-2" id="multimedia-courses">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed bg-danger" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#multimedia">
+							Multimedia Courses
+						</button>
+					</h2>
+					<div class="accordion-collapse collapse" id="multimedia">
+						<h6 class="text-center text-dark" style="margin-top: 60px;"><span class="bg-warning rounded-pill p-2">Proffessional Training In Multimedia</span></h6>
+						<h1 class="text-center my-4">Multimedia Courses We’re Offering</h1>
+						<div class="accordion-body">
+							<div class="container my-3">
+								<div class="card-deck text-center">
+									<div class="row">
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://www.graphicdesign.com/assets/img/Graphic-Design-Logo.png" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding: 40px;">Graphic Designing (GD)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://svitla.com/uploads_converted/0/1768-web_design.webp?1554368507" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Web Designing (WD)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://images.unsplash.com/photo-1609619385002-f40f1df9b7eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmlkZW8lMjBlZGl0aW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Multimedia Editor (ME)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://motiongility.com/wp-content/uploads/2023/01/2D-Animation-Software.png" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Certificate In 2D Animation</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://images.unsplash.com/photo-1547194936-28214bd75193?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8M2QlMjBhbmltYXRpb258ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Certificate In 3D Animation</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://images.unsplash.com/photo-1618329027137-a520b57c6606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVsdGltZWRpYXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master In Multimedia Designing & Editing (MMDE)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://examtutor.weebly.com/uploads/5/9/9/7/59975261/multimedia-training-institute-in-guntur_orig.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master In Multimedia Graphics & Animation (MMGA)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://motionarray.imgix.net/preview-1125580-nTHfkzbDHd-high_0001.jpg?w=660&q=60&fit=max&auto=format" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master In Multimedia Visualizer (MMV)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://c0.wallpaperflare.com/preview/725/794/424/austria-linz-programming-phpstorm.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Asp.Net, Vb.Net, Ado.Net, C#, Ms Sql Server</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Multimedia Courses -->
+
+				<!--  Hardware & Network Courses -->
+				<div class="accordion-items my-2" id="hardware-network-courses">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed bg-danger" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#hardware-network">
+							Hardware Network Courses
+						</button>
+					</h2>
+					<div class="accordion-collapse collapse" id="hardware-network">
+						<h6 class="text-center text-dark" style="margin-top: 60px;"><span class="bg-warning rounded-pill p-2">Proffessional Training In Hardware Network</span></h6>
+						<h1 class="text-center my-4">Hardware Network Courses We’re Offering</h1>
+						<div class="accordion-body">
+							<div class="container my-3">
+								<div class="card-deck text-center">
+									<div class="row">
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://plus.unsplash.com/premium_photo-1681426669771-d2113672a49b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGFyZHdhcmV8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding: 40px;">Hardware</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://w0.peakpx.com/wallpaper/330/742/HD-wallpaper-blue-digital-world-map-blue-neon-light-world-map-concepts-digital-technologies-art-networks.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Networking</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://file-uploads.teachablecdn.com/e1ce8d0021f1466eb12472dadac81ca1/ca1e641eb50d4fe5b140e17049889d63" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">CCNA</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://media.istockphoto.com/id/540848970/photo/hacker-attacking-internet.jpg?s=612x612&w=0&k=20&c=P5FCZIihGAP3RPhSaBMSm4379-Kyj80CQE1wbv3gNRs=" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Ethical Hacking</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-lg-4 my-3">
+											<div class="card">
+												<img loading="lazy" src="https://wallpapers.com/images/hd/hd-engineering-computer-technology-9c4d0251f783p6zh.jpg" alt="" class="card-img-top">
+												<h3 class="card-title" style="color:#fa3737; padding-top: 40px; padding-bottom: 40px;">Master In System Engineering & Networking (Msen)</h3>
+												<div style="padding-bottom: 40px;">
+													<a href="#more-details" class="btn btn-warning">More Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hardware & Networking Courses -->
+			</div>
+			<!-- End Accordion  -->
+		
+		</section>
+		<!-- End Courses -->
+		
+		<!--  Contact Us -->
+		<section id="contact-us" style="padding-top: 50px;">
+			
+		<br>
+
+		<h1 class="display-2" id="more-details" style="font-family: Impact; text-align: center; margin-top: 40px; padding-bottom: 10px;"><span class="bg-warning rounded-pill p-3" style="text-shadow: 5px 5px 10px black; color: white;">CONTACT US</span></h1>
+
+		<br>
+
+		<div class="container">
+
+			<h2 class="text-center text-light" style="margin-top: 30px; margin-bottom: 10px;"><span class="bg-danger rounded-pill p-2">Contact Information</span></h2>
+			<img loading="lazy" loading="lazy"src="https://freepngimg.com/save/57219-call-centre-hd-free-download-png-hd/1000x500" alt="" class="img-fluid">
+
+			<div class="row">
+				<div class="col-sm-9 mx-auto">
+					<div class="card my-3">
+						<div class="card-header text-center bg-secondary">
+							<h3 class="display-6 text-light">For Enquiry</h3>
+						</div>
+						<div class="card-body" style="background-color: #cbcbcbed;">
+							<form action="" method="post">
+		
+								<div class="form-group row my-2">
+									<label for="name" class="col-sm-5 col-md-6 col-form-label">Full Name</label>
+									<div class="col-sm-3 col-md-6">
+										<input type="text" class="" id="name" name="name" placeholder="Enter Your Name..." required>
+									</div>	
+								</div>
+
+								<div class="form-group row my-2">
+									<label for="mobile" class="col-sm-5 col-md-6 col-form-label">Mobile No.</label>
+									<div class="col-sm-3 col-md-6">
+										<input type="number" class="" id="mobile" name="mobile" placeholder="+91 99*** ***78" required>
+									</div>	
+								</div>
+		
+								<div class="form-group row my-2">
+									<label for="email" class="col-sm-5 col-md-6 col-form-label">Email</label>
+									<div class="col-sm-3 col-md-6">
+										<input type="email" class="" id="email" name="email" placeholder="Enter Your Email..." required>
+									</div>	
+								</div>
+
+								<div class="form-group row my-2">
+									<label for="message" class="col-sm-5 col-md-6 col-form-label">Message</label>
+									<div class="col-sm-3 col-md-6">
+										<textarea class="" id="message" name="message" cols="23" rows="4" placeholder="Enter Your Messages......" required></textarea>
+									</div>	
+								</div>
+
+								<div class="form-group row my-2">
+									<div class="col-sm-6 col-md-4 col-lg-3 mx-auto" >
+										<button type="reset" class="btn btn-secondary">Reset</button>
+										<button type="submit" class="btn btn-primary">Submit</button>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="card-group">
+					<div class="col-md-4">
+						<div class="card my-3 mx-1" style="background-color: #ff4949;">
+							<div class="card-body text-light text-center">
+								<h1><ion-icon name="home"></ion-icon></h1>
+								<h3 class="card-title">Address</h3>
+								<address>109, A/12, Sri Pushpa Complex, Kamarajaj St., Opp - Bus Stand, Near Abirami Hotel, Kanchipuram.</address>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="card my-3 mx-1" style="background-color: #49adff;">
+							<div class="card-body text-light text-center">
+								<h1><ion-icon name="call"></ion-icon></h1>
+								<h3 class="card-title">Phone No.</h3>
+								<p>044-27234330</p>
+								<p>+91 9043012503</p>
+								<p>+91 9952212503</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="card my-3 mx-1" style="background-color: #ff49b3;">
+							<div class="card-body text-light text-center">
+								<h1><ion-icon name="mail"></ion-icon></h1>
+								<h3 class="card-title">Email</h3>
+								<p>apollocomputeredukanchi@gmail.com</p>
+								<br>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</section>
+		<!-- End Contact Us -->
+
+	</main>
+	<!-- End Main Content -->
+
+	<img src="https://png.pngtree.com/background/20230526/original/pngtree-the-computer-and-electronic-components-are-shown-on-the-background-picture-image_2748828.jpg" alt="" class="img-fluid w-100" loading="lazy">
+
+	<!-- Footer -->
+	<footer class="bg-warning" style="padding-bottom: 70px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h5 class="text-danger pt-5 mb-3">APOLLO COMPUTER EDUCATION</h5>
+					<p><strong>Apollo Computer Education :</strong> A Unit of Apollo Colleges Group has a vast network with establishment. The Institute offers wide range of services in Computer Training.</p>
+					<a href="#about-us" class="btn btn-danger">Read More</a>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-danger pt-5 mb-3">LINKS</h5>
+					<a class="nav-link text-dark" href="#home"><strong>Home</strong></a>
+					<a class="nav-link text-dark" href="#about-us"><strong>About Us</strong></a>
+					<a class="nav-link text-dark" href="#courses"><strong>Courses</strong></a>
+					<a class="nav-link text-dark" href="#contact-us"><strong>Contact Us</strong></a>
+				</div>
+				<div class="col-md-4">
+					<h5 class="text-danger pt-5 mb-3">FOLLOW US</h5>
+					<a class="nav-link text-dark" href="https://www.instagram.com/apollocomputereducationkanchi" target="_blank"><strong><ion-icon class="pe-2" style="font-size: .8cm" name="logo-instagram"></ion-icon></strong></a>
+					<a class="nav-link text-dark" href="https://www.facebook.com/apollocomputereducationkanchipuram" target="_blank"><strong><ion-icon class="pe-2" style="font-size: .8cm" name="logo-facebook"></ion-icon></strong></a>
+					<a class="nav-link text-dark" href="https://twitter.com/apollo_educ" target="_blank"><strong><ion-icon class="pe-2" style="font-size: .8cm" name="logo-twitter"></ion-icon></strong></a>
+					<a class="nav-link text-dark" href=" https://www.linkedin.com/in/apolloeducation-kanchipuram-6462b0171/" target="_blank"><strong><ion-icon class="pe-2" style="font-size: .8cm" name="logo-linkedin"></ion-icon></strong></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	
+	<!-- JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+	<!-- Icons -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- Alert Message -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+	<script>
+		var ScrollSpy = new bootstrap.ScrollSpy(document.boddy, {
+			target: '#navbar'
+		})
+
+	</script>
+
+</body>
+</html>
+
+
+<?php
+
+$name = $_POST["name"];
+$mobile = $_POST['mobile'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+
+
+if(!empty('$name') || !empty('$mobile') || !empty('$email') || !empty('$message'))
+{
+    $host = "localhost";
+    $dbusername = "root";
+    $dbpassword = "";
+    $dbname = "apollo";
+
+    $conn = new mysqli($host,$dbusername,$dbpassword,$dbname);
+
+    if(mysqli_connect_error()){
+        die('connect Error('.mysqli_connect_errno() .') '.mysqli_connect_error());
+    }
+
+    else{
+        $SELECT = "SELECT email from enquiry where email = ? Limit 1";
+        $INSERT = "INSERT Into enquiry(name,mobile,email,message)values(?,?,?,?)";
+
+        //prepare statement
+
+        $stmt = $conn->prepare($SELECT);
+        $stmt->bind_param("s",$email);
+        $stmt->execute();
+        $stmt->bind_result($email);
+        $stmt->store_result();
+        $rnum = $stmt->num_rows;
+
+        //checking username
+
+        if($rnum==0){
+            $stmt->close();
+            $stmt = $conn->prepare($INSERT);
+            $stmt->bind_param("siss",$name,$mobile,$email,$message);
+            $stmt->execute();
+            
+        ?>
+
+             <script>swal({
+		title: '<?php echo "Your Data is Submitted Successfully." ?>',
+		icon: "success",
+		button: "Ok",
+		});
+	</script>;
+
+		<?php
+        }
+        else{
+            
+            
+            
+        }
+        $stmt->close();
+        $conn->close();
+
+    }
+
+}else{
+    
+    echo 'All fields are required';
+    
+    die();
+}
+
+?>
